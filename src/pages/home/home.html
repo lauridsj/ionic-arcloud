@@ -7,8 +7,13 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  Record some shit!
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+	<ion-input typeof="text" placeholder="Path" [(ngModel)]="inputPath"> </ion-input>
+	<ion-input typeof="text" placeholder="File" [(ngModel)]="inputFile"> </ion-input>
+    <button ion-button (click)="startRecording()">Start Recording</button>
+	<button ion-button (click)="stopRecording()">Stop Recording</button>
+	<button ion-button (click)="identifySong()">Identify</button>
+	<button ion-button (click)="tryCrypto()">Try Crypto</button>
   </p>
 </ion-content>
